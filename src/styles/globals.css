@@ -167,7 +167,7 @@ header {
 #html {
   left: 100px;
   bottom: 80px;
-  background-image: url("../../public/images/html-square.png");
+  background-image: url("/images/html-square.png");
   background-size: cover;
   background-color: rgb(175, 119, 227);
   box-shadow: -60px 60px 20px rgb(50 50 50/ 15%);
