@@ -184,7 +184,7 @@ header {
 #css {
   left: 250px;
   bottom: 240px;
-  background-image: url("../../public/images/css-square.png");
+  background-image: url("/images/css-square.png");
   background-size: cover;
   background-color: rgb(227, 119, 191);
   box-shadow: -100px 100px 20px rgb(50 50 50/ 15%);
@@ -201,7 +201,7 @@ header {
 #javascript {
   left: 450px;
   bottom: 200px;
-  background-image: url("../../public/images/javascript-square.png");
+  background-image: url("/images/javascript-square.png");
   background-size: cover;
   background-color: rgb(119, 227, 186);
   box-shadow: -40px 40px 20px rgb(50 50 50/ 15%);
@@ -218,7 +218,7 @@ header {
 #react {
   left: 350px;
   bottom: 40px;
-  background-image: url("../../public/images/react-square.png");
+  background-image: url("/images/react-square.png");
   background-size: cover;
   background-color: rgb(119, 193, 227);
   box-shadow: -80px 80px 20px rgb(50 50 50/ 15%);
