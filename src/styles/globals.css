@@ -6,18 +6,20 @@ body {
   padding: 0;
   background-color: rgb(244, 241, 241);
   font-family: "Poppins", sans-serif;
-  color: rgb(57, 57, 57);
+  font-weight: 500;
+  color: rgb(8, 8, 8);
+  font-size: clamp(16px, 2vw, 26px);
 }
 
 h1 {
-  font-size: 70px;
+  /* font-size: 70px; */
   line-height: 70px;
   font-weight: 300;
   margin: 10px 0;
 }
 
 h2 {
-  font-size: 40px;
+  /* font-size: 40px; */
   line-height: 40px;
   font-weight: 300;
   margin: 50px 0 10px 0;
@@ -25,12 +27,12 @@ h2 {
 
 p {
   margin: 0px;
-  font-size: 20px;
+  /* font-size: 20px; */
 }
 
 a {
   color: rgb(162, 0, 255);
-  font-size: 20px;
+  /* font-size: 20px; */
   text-decoration: none;
   font-weight: 100;
 }
@@ -118,14 +120,20 @@ header {
   /* overflow: hidden; */
   border-radius: 15px;
   position: relative;
+  box-shadow: 4px 4px 5px 3px rgba(0, 0, 0, 0.58);
 }
 
 .square img {
   max-width: 100%;
 }
 
+.square p {
+  margin-bottom: 15px;
+}
+
 .dark .square {
   background-color: rgb(71, 71, 71);
+  box-shadow: 4px 4px 5px 3px rgba(148, 146, 146, 0.58);
 }
 
 .sub-section {
@@ -135,6 +143,7 @@ header {
 
 .hero-image {
   position: relative;
+  margin-left: 10%;
   width: 50%;
   height: 350px;
   display: block;
@@ -241,11 +250,12 @@ footer {
   display: flex;
   justify-content: center;
   padding: 20px 30px;
-  background-color: rgb(136, 136, 136);
+  background-image: linear-gradient(to bottom, #86377b 20%, #d1d1db 80%);
 }
 
 .dark footer {
   background-color: rgb(28, 28, 28);
+  background-image: none;
 }
 
 .contact-icons {
@@ -412,6 +422,19 @@ footer {
   filter: grayscale(0%);
 }
 
+.responsive-image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive-image {
+    width: 20%;
+    height: 20%;
+  }
+}
+
 @media only screen and (min-width: 970px) {
   .main-text {
     width: 50%;
@@ -421,6 +444,37 @@ footer {
     width: 48%;
     margin: 1%;
     height: 600px;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  .square {
+    position: relative;
+    margin: 1rem;
+  }
+
+  .square:before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(120deg, #3023ae 0%, #aedcf3 100%);
+    z-index: -1;
+    background-size: 200%;
+    transition: 0.5s;
+    border-radius: 15px;
+    animation: animate 5s linear infinite;
+  }
+
+  @keyframes animate {
+    0% {
+      background-position: 100%;
+    }
+    100% {
+      background-position: 0;
+    }
   }
 }
 

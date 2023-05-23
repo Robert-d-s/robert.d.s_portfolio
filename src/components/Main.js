@@ -8,14 +8,13 @@ export default function Main() {
     <section className="main">
       <div className="main-text">
         <h1>Robert D. Stoica</h1>
-        <p>Welcome to my Page!</p>
+        <p>Welcome to my Portfolio!</p>
         <br />
         <p>
           Exploring Frontend Web Development: Showcasing My Journey in
           Multimedia Design Education
         </p>
         <br />
-        {/* <a href="#footer">contact me</a> */}
         <div className="contact-icons">
           <a
             href="https://www.linkedin.com/in/robert-stoica/"
@@ -68,12 +67,15 @@ export default function Main() {
       </div>
       <div className="main-image">
         <div className="animated-border">
-          <Image
-            src="/images/me.png" // replace with your image path
-            alt="a picture of me, Robert"
-            width={300} // adjust as needed
-            height={300} // adjust as needed
-          />
+          <div className="responsive-image">
+            <Image
+              src="/images/me.png"
+              alt="a picture of me, Robert"
+              style={{ objectFit: "cover" }}
+              width={300}
+              height={300}
+            />
+          </div>
         </div>
       </div>
 
