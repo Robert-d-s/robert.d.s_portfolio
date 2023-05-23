@@ -1,7 +1,11 @@
 import { useState } from "react";
+import { useContext } from "react";
+import { DarkModeContext } from "../context/DarkModeContext";
 
 export default function DarkModeSwitch() {
-  const [darkMode, setDarkMode] = useState(false);
+  const { darkMode, setDarkMode } = useContext(DarkModeContext);
+
+  // const [darkMode, setDarkMode] = useState(false);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);

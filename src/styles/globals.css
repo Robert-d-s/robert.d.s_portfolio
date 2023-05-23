@@ -128,10 +128,6 @@ header {
   background-color: rgb(71, 71, 71);
 }
 
-.dark .square .icon .project-icon {
-  fill: white;
-}
-
 .sub-section {
   display: flex;
   flex-wrap: wrap;

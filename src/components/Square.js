@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
+import { useContext } from "react";
+import { DarkModeContext } from "../context/DarkModeContext";
 
 const Square = ({
   id,
@@ -15,6 +17,8 @@ const Square = ({
     triggerOnce: true, // Change this to false if you want the animation to trigger again whenever it comes in view
     threshold: 0.1, // Percentage of the element that is in view before the callback triggers
   });
+
+  const { darkMode } = useContext(DarkModeContext);
 
   const variants = {
     hidden: { opacity: 0, scale: 0.9 },
@@ -42,7 +46,11 @@ const Square = ({
       <div className="project-links">
         <a href={githubLink} target="_blank" rel="noopener noreferrer">
           <Image
-            src="/images/icon-github.svg"
+            src={
+              darkMode
+                ? "/images/icon-github-white.svg"
+                : "/images/icon-github.svg"
+            }
             alt="GitHub"
             className="project-icon"
             width={32}
@@ -51,7 +59,9 @@ const Square = ({
         </a>
         <a href={demo} target="_blank" rel="noopener noreferrer">
           <Image
-            src="/images/icon-live.svg"
+            src={
+              darkMode ? "/images/icon-live-white.svg" : "/images/icon-live.svg"
+            }
             alt="Demo"
             className="project-icon"
             width={32}

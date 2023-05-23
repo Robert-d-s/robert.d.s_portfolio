@@ -1,16 +1,9 @@
+import { useContext } from "react";
 import Image from "next/image";
+import { DarkModeContext } from "../context/DarkModeContext";
 
-export default function Main({ darkMode }) {
-  const iconLinkedIn = darkMode
-    ? "/images/icon-li-dark.svg"
-    : "/images/icon-li-light.svg";
-  const iconGitHub = darkMode
-    ? "/images/icon-github.svg"
-    : "/images/icon-github-white.svg";
-  const iconEmail = darkMode
-    ? "/images/icon-email-dark.svg"
-    : "/images/icon-email-light.svg";
-
+export default function Main() {
+  const { darkMode } = useContext(DarkModeContext);
   return (
     <section className="main">
       <div className="main-text">
@@ -31,7 +24,9 @@ export default function Main({ darkMode }) {
             className="icon-link"
           >
             <Image
-              src="/images/icon-li.svg"
+              src={
+                darkMode ? "/images/icon-li-white.svg" : "/images/icon-li.svg"
+              }
               alt="LinkedIn"
               width={24}
               height={24}
@@ -45,7 +40,11 @@ export default function Main({ darkMode }) {
             className="icon-link"
           >
             <Image
-              src={iconGitHub}
+              src={
+                darkMode
+                  ? "/images/icon-github-white.svg"
+                  : "/images/icon-github.svg"
+              }
               alt="GitHub"
               width={24}
               height={24}
@@ -54,7 +53,11 @@ export default function Main({ darkMode }) {
           </a>
           <a href="mailto:robe3750@stud.kea.dk" className="icon-link">
             <Image
-              src="/images/icon-email.svg"
+              src={
+                darkMode
+                  ? "/images/icon-email-white.svg"
+                  : "/images/icon-email.svg"
+              }
               alt="Email"
               width={24}
               height={24}
