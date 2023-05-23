@@ -39,9 +39,6 @@ const Square = ({
     >
       <h2>{title}</h2>
       <p>{description}</p>
-      {/* <br />
-      <a href={githubLink}>check it out</a>
-      <a href={demo}>Demo</a> */}
       <div className="project-links">
         <a href={githubLink} target="_blank" rel="noopener noreferrer">
           <Image

@@ -1,6 +1,16 @@
 import Image from "next/image";
 
-export default function Main() {
+export default function Main({ darkMode }) {
+  const iconLinkedIn = darkMode
+    ? "/images/icon-li-dark.svg"
+    : "/images/icon-li-light.svg";
+  const iconGitHub = darkMode
+    ? "/images/icon-github.svg"
+    : "/images/icon-github-white.svg";
+  const iconEmail = darkMode
+    ? "/images/icon-email-dark.svg"
+    : "/images/icon-email-light.svg";
+
   return (
     <section className="main">
       <div className="main-text">
@@ -35,7 +45,7 @@ export default function Main() {
             className="icon-link"
           >
             <Image
-              src="/images/icon-github.svg"
+              src={iconGitHub}
               alt="GitHub"
               width={24}
               height={24}
