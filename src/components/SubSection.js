@@ -11,6 +11,7 @@ export default function SubSection() {
         demo="https://foofest-app.vercel.app/"
         imgSrc="/images/colorfoo.jpg"
         delay={0.1}
+        // delay={0.1}
       />
       <Square
         id="EDC"
