@@ -12,6 +12,15 @@ export default function SubSection() {
         imgSrc="/images/colorfoo.jpg"
         delay={0.1}
       />
+      {/* <Square
+        id="ColorFoo"
+        title="ColorFoo Festival - Festival app"
+        description="Exam project for frontend elective"
+        githubLink="https://github.com/Robert-d-s/foofest-app.git"
+        demo="https://foofest-app.vercel.app/"
+        imgSrc="/images/colorfoo.jpg"
+        delay={0.1}
+      /> */}
       <Square
         id="EDC"
         title="EDC - Find Buyers"

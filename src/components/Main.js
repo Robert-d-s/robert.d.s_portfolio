@@ -86,6 +86,5 @@ export default function Main() {
         <div className="cube" id="css"></div>
       </div>
     </section>
-    // </section>
   );
 }
