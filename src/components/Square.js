@@ -14,8 +14,8 @@ const Square = ({
   delay,
 }) => {
   const { ref, inView } = useInView({
-    triggerOnce: true, // Change this to false if you want the animation to trigger again whenever it comes in view
-    threshold: 0.1, // Percentage of the element that is in view before the callback triggers
+    triggerOnce: true,
+    threshold: 0.1,
   });
 
   const { darkMode } = useContext(DarkModeContext);
