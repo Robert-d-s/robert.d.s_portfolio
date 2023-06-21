@@ -125,6 +125,7 @@ header {
 
 .square p {
   margin-bottom: 15px;
+  padding: 0 0.3rem 0 0.3rem;
 }
 
 .dark .square {
@@ -156,23 +157,9 @@ header {
 
 .cube {
   position: absolute;
-  width: 5vw; /* Adjust as needed */
-  height: 5vw; /* Adjust as needed */
+  width: 5vw;
+  height: 5vw;
   transform: rotate(-25deg) skew(25deg);
-}
-
-@media (max-width: 768px) {
-  .cube {
-    width: 20%; /* Adjust as needed */
-    height: 20%; /* Adjust as needed */
-  }
-}
-
-@media (max-width: 480px) {
-  .cube {
-    width: 30%; /* Adjust as needed */
-    height: 30%; /* Adjust as needed */
-  }
 }
 
 .cube:before {
@@ -419,13 +406,13 @@ footer {
 }
 
 .project-links {
-  position: absolute;
+  /* position: absolute; */
   right: -1.5%;
   top: 5%;
   /* transform: translateY(-50%); */
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  /* flex-direction: column; */
+  gap: 2rem;
   z-index: 99;
 }
 
@@ -455,6 +442,10 @@ footer {
     flex-direction: column;
     padding: 0;
     justify-content: flex-start;
+  }
+
+  .project-links {
+    position: relative;
   }
 }
 
