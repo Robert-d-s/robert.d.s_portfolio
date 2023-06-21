@@ -450,11 +450,12 @@ footer {
   position: relative;
 } */
 
-@media only screen and (max-width: 700px) {
-  /* .responsive-image {
-    width: 20%;
-    height: 20%;
-  } */
+@media only screen and (max-width: 550px) {
+  .main {
+    flex-direction: column;
+    padding: 0;
+    justify-content: flex-start;
+  }
 }
 
 @media only screen and (min-width: 970px) {
