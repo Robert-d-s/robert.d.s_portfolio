@@ -71,7 +71,8 @@ export default function Main() {
             <Image
               src="/images/me.png"
               alt="a picture of me, Robert"
-              style={{ objectFit: "cover" }}
+              // style={{ objectFit: "cover" }}
+              style={{ width: "100%", height: "auto" }}
               width={300}
               height={300}
             />
