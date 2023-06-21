@@ -144,13 +144,35 @@ header {
   display: block;
   margin-bottom: 100px;
   z-index: 6;
+  /* overflow: hidden; */
 }
 
-.cube {
+/* .cube {
   position: absolute;
   width: 80px;
   height: 80px;
   transform: rotate(-25deg) skew(25deg);
+} */
+
+.cube {
+  position: absolute;
+  width: 5vw; /* Adjust as needed */
+  height: 5vw; /* Adjust as needed */
+  transform: rotate(-25deg) skew(25deg);
+}
+
+@media (max-width: 768px) {
+  .cube {
+    width: 20%; /* Adjust as needed */
+    height: 20%; /* Adjust as needed */
+  }
+}
+
+@media (max-width: 480px) {
+  .cube {
+    width: 30%; /* Adjust as needed */
+    height: 30%; /* Adjust as needed */
+  }
 }
 
 .cube:before {
@@ -174,8 +196,8 @@ header {
 }
 
 #html {
-  left: 100px;
-  bottom: 80px;
+  left: 116px;
+  bottom: 83px;
   background-image: url("/images/html-square.png");
   background-size: cover;
   background-color: rgb(175, 119, 227);
@@ -191,7 +213,7 @@ header {
 }
 
 #css {
-  left: 250px;
+  left: 227px;
   bottom: 240px;
   background-image: url("/images/css-square.png");
   background-size: cover;
