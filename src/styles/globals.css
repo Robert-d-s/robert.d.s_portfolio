@@ -99,7 +99,7 @@ header {
 
 .main-text {
   padding: 30px;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
   max-width: 35rem;
   z-index: 10;
 }
