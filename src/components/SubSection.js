@@ -7,8 +7,8 @@ export default function SubSection() {
         id="ColorFoo"
         title="ColorFoo Festival - Festival app"
         description="Exam project for frontend elective"
-        githubLink="https://github.com/Robert-d-s/foofest-app.git"
-        demo="https://foofest-app.vercel.app/"
+        githubLink="https://github.com/Robert-d-s/foofest-app-exam.git"
+        demo="https://foofest-app-exam.vercel.app/"
         imgSrc="/images/colorfoo.jpg"
         delay={0.1}
       />
