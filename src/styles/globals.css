@@ -446,6 +446,7 @@ footer {
 
   .project-links {
     position: relative;
+    padding-bottom: 0.8rem;
   }
 }
 
