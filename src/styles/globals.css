@@ -196,8 +196,8 @@ header {
 }
 
 #html {
-  left: 116px;
-  bottom: 83px;
+  left: 93px;
+  bottom: 104px;
   background-image: url("/images/html-square.png");
   background-size: cover;
   background-color: rgb(175, 119, 227);
@@ -213,8 +213,8 @@ header {
 }
 
 #css {
-  left: 227px;
-  bottom: 240px;
+  left: 166px;
+  bottom: 236px;
   background-image: url("/images/css-square.png");
   background-size: cover;
   background-color: rgb(227, 119, 191);
@@ -230,8 +230,8 @@ header {
 }
 
 #javascript {
-  left: 450px;
-  bottom: 200px;
+  left: 338px;
+  bottom: 177px;
   background-image: url("/images/javascript-square.png");
   background-size: cover;
   background-color: rgb(119, 227, 186);
@@ -247,7 +247,7 @@ header {
 }
 
 #react {
-  left: 350px;
+  left: 295px;
   bottom: 40px;
   background-image: url("/images/react-square.png");
   background-size: cover;
