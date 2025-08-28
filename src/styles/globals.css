@@ -1,5 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
 
+:root {
+  /* Common spacing values */
+  --space-xs: 5px;
+  --space-sm: 10px;
+  --space-md: 20px;
+  --space-lg: 30px;
+  --space-xl: 40px;
+  --space-2xl: 50px;
+
+  /* Switch component */
+  --switch-width: 80px;
+  --switch-height: 40px;
+  --switch-radius: 20px;
+  --flicker-size: 30px;
+  --flicker-radius: 15px;
+  --moon-size: 20px;
+  --moon-radius: 10px;
+
+  /* Wave animation */
+  --wave-height-small: 100px;
+  --wave-height-medium: 120px;
+
+  /* Cube positioning - responsive using vw/vh for better scaling */
+  --cube-html-left: 6vw;
+  --cube-html-bottom: 6vh;
+  --cube-css-left: 10vw;
+  --cube-css-bottom: 15vh;
+  --cube-js-left: 20vw;
+  --cube-js-bottom: 11vh;
+  --cube-react-left: 18vw;
+  --cube-react-bottom: 3vh;
+}
+
 body {
   transition: 0.3s;
   margin: 0;
@@ -14,13 +47,13 @@ body {
 h1 {
   line-height: 70px;
   font-weight: 300;
-  margin: 10px 0;
+  margin: var(--space-sm) 0;
 }
 
 h2 {
   line-height: 40px;
   font-weight: 300;
-  margin: 50px 0 10px 0;
+  margin: var(--space-2xl) 0 var(--space-sm) 0;
 }
 
 p {
@@ -40,26 +73,26 @@ a {
 header {
   display: flex;
   justify-content: flex-end;
-  padding: 30px;
+  padding: var(--space-lg);
 }
 
 .switch {
-  width: 80px;
-  height: 40px;
-  border-radius: 20px;
+  width: var(--switch-width);
+  height: var(--switch-height);
+  border-radius: var(--switch-radius);
   background-color: rgb(39, 38, 38);
   position: relative;
   z-index: 6;
 }
 
 .flicker {
-  width: 30px;
-  height: 30px;
-  border-radius: 15px;
+  width: var(--flicker-size);
+  height: var(--flicker-size);
+  border-radius: var(--flicker-radius);
   background-color: rgb(255, 255, 255);
   position: absolute;
-  top: 5px;
-  left: 5px;
+  top: var(--space-xs);
+  left: var(--space-xs);
   transition: 0.3s;
   box-shadow: inset 4px 4px 4px rgb(255, 255, 255),
     inset -4px -4px 4px rgb(195 193 198 / 90%);
@@ -310,6 +343,7 @@ footer {
   bottom: 0;
   top: 0;
   margin: auto;
+  z-index: -10; /* Ensure it stays behind all content */
 }
 
 .waveWrapperInner {
@@ -346,7 +380,7 @@ footer {
 }
 
 .waveTop {
-  background-size: 50% 100px;
+  background-size: 50% var(--wave-height-small);
 }
 
 .waveAnimation .waveTop {
@@ -357,7 +391,7 @@ footer {
 }
 
 .waveMiddle {
-  background-size: 50% 120px;
+  background-size: 50% var(--wave-height-medium);
 }
 
 .waveAnimation .waveMiddle {
@@ -365,7 +399,7 @@ footer {
 }
 
 .waveBottom {
-  background-size: 50% 100px;
+  background-size: 50% var(--wave-height-small);
 }
 
 .waveAnimation .waveBottom {
@@ -430,12 +464,6 @@ footer {
   width: 100%;
   max-width: 600px;
 }
-
-/* .responsive-image {
-  width: 100%;
-  height: 100%;
-  position: relative;
-} */
 
 @media only screen and (max-width: 550px) {
   .main {
