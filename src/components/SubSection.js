@@ -4,6 +4,24 @@ export default function SubSection() {
   return (
     <section className="sub-section">
       <Square
+        id="Enablment - Front"
+        title="Enablment Landing Page"
+        description="Company website"
+        githubLink="https://github.com/Robert-d-s/enablment_front.git"
+        demo=""
+        imgSrc="/images/enablment_front.jpg"
+        delay={0.1}
+      />
+      <Square
+        id="Enablment - Back"
+        title="Enablment team and client management platform"
+        description="Project management"
+        githubLink="https://github.com/Robert-d-s/enablment_back.git"
+        demo=""
+        imgSrc="/images/enablment_back.jpg"
+        delay={0.1}
+      />
+      <Square
         id="ColorFoo"
         title="ColorFoo Festival - Festival app"
         description="Exam project for frontend elective"
