@@ -287,7 +287,12 @@ footer {
   display: flex;
   justify-content: center;
   padding: 20px 30px;
-  background-image: linear-gradient(to bottom, #86377b 20%, #d1d1db 80%);
+  background-color: #86377b;
+  background-image: linear-gradient(
+    to top,
+    rgba(134, 55, 123, 1) 20%,
+    rgba(209, 209, 219, 1) 80%
+  );
 }
 
 .dark footer {
