@@ -8,7 +8,6 @@ export default function SubSection() {
         title="Enablment Landing Page"
         description="Company website"
         githubLink="https://github.com/Robert-d-s/enablment_front.git"
-        demo=""
         imgSrc="/images/enablment_front.jpg"
         delay={0.1}
       />
@@ -17,7 +16,6 @@ export default function SubSection() {
         title="Enablment team and client management platform"
         description="Project management"
         githubLink="https://github.com/Robert-d-s/enablment_back.git"
-        demo=""
         imgSrc="/images/enablment_back.jpg"
         delay={0.1}
       />

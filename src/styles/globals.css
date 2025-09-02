@@ -124,20 +124,21 @@ header {
 }
 
 .main {
-  height: 80vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 30px;
+  position: relative;
 }
 
 .main-text {
   padding: 30px;
-  /* margin-bottom: 100px; */
   max-width: 35rem;
   z-index: 10;
   transform: translateZ(0);
+  position: relative;
 }
 
 .square {
@@ -172,16 +173,20 @@ header {
 .sub-section {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 2rem;
+  position: relative;
+  z-index: 5;
 }
 
 .hero-image {
-  position: relative;
+  position: absolute;
   width: 50%;
   height: 350px;
-  display: block;
-  margin-bottom: 100px;
-  z-index: 6;
-  /* overflow: hidden; */
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  pointer-events: none;
 }
 
 .cube {
@@ -415,6 +420,8 @@ footer {
 
 .main-image {
   z-index: 6;
+  position: relative;
+  flex-shrink: 0;
 }
 
 .animated-border {
