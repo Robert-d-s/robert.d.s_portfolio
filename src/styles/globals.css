@@ -131,6 +131,7 @@ header {
   align-items: center;
   padding: 30px;
   position: relative;
+  margin-bottom: 2rem;
 }
 
 .main-text {
@@ -173,20 +174,17 @@ header {
 .sub-section {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 2rem;
   position: relative;
   z-index: 5;
 }
 
 .hero-image {
-  position: absolute;
+  position: relative;
   width: 50%;
   height: 350px;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  display: block;
+  margin-bottom: 100px;
   z-index: 1;
-  pointer-events: none;
 }
 
 .cube {
